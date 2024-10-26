@@ -10,9 +10,9 @@ There are two notebooks in training codes, each corresponding to the training an
 
 Since the original AUC V2 dataset did not provide driver IDs, I manually annotated the driver IDs. The file datasets/driver_IDs.csv contains the mapping of the original data to the driver IDs. Please note the following important points:
 
-(1) images 322.jpg to 415.jpg in the path "auc.distracted.driver.dataset_v2\v2_cam1_cam2_split_by_driver\Camera 1\test\c0" actually correspond to a driver who appears in the training set paths "auc.distracted.driver.dataset_v2\v2_cam1_cam2_split_by_driver\Camera 1\train\c1" to "...\c9". Therefore, this driver should belong to the training set. In the annotated dataset with IDs, I have corrected this minor issue. However, for fair comparison, in our paper, I still classified images 322.jpg to 415.jpg in the test set and ensured they did not appear in the training set (this can be verified in the public code).
+(1) In the original AUC V2 dataset, images 322.jpg to 415.jpg in the path "auc.distracted.driver.dataset_v2\v2_cam1_cam2_split_by_driver\Camera 1\test\c0" actually correspond to a driver who appears in the training set paths "auc.distracted.driver.dataset_v2\v2_cam1_cam2_split_by_driver\Camera 1\train\c1" to "...\c9". Therefore, this driver should belong to the training set. In the annotated dataset with IDs, I have corrected this minor issue. However, for fair comparison, in our paper, I still classified images 322.jpg to 415.jpg in the test set and ensured they did not appear in the training set (this can be verified in the public code).
 
-(2) the driver IDs in the train and test folders under "Camera 1" and "Camera 2" are independently numbered. In other words, the ID001 in "Camera 1\train", "Camera 1\test", "Camera 2\train", and "Camera 2\test" corresponds to different drivers.
+(2) The driver IDs in the train and test folders under "Camera 1" and "Camera 2" are independently numbered. In other words, the ID001 in "Camera 1\train", "Camera 1\test", "Camera 2\train", and "Camera 2\test" corresponds to different drivers.
 
 You can access the driver_IDs.csv file using the following code:
 ```
