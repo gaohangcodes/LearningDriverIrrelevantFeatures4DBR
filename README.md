@@ -14,6 +14,13 @@ Since the original AUC V2 dataset did not provide driver IDs, I manually annotat
 
 (2) the driver IDs in the train and test folders under "Camera 1" and "Camera 2" are independently numbered. In other words, the ID001 in "Camera 1\train", "Camera 1\test", "Camera 2\train", and "Camera 2\test" corresponds to different drivers.
 
+You can access the driver_IDs.csv file using the following code:
+```
+import pandas as pd
+csv_file_path = '/kaggle/working/driver_IDs.csv'
+df = pd.read_csv(csv_file_path, encoding='utf-8')
+```
+
 The publication of the driver IDs has been approved by Dr. Hesham Eraqi, who was a key member in the collection and release of the AUC V2 dataset. Please note the following: 
 
 (1) You should sign the license agreement (https://heshameraqi.github.io/distraction_detection ) to obtain and use the AUC V2 dataset.
