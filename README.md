@@ -17,7 +17,7 @@ Since the original AUC V2 dataset did not provide driver IDs, I manually annotat
 You can access the driver_IDs.csv file using the following code:
 ```
 import pandas as pd
-csv_file_path = '/kaggle/working/driver_IDs.csv'
+csv_file_path = 'driver_IDs.csv'
 df = pd.read_csv(csv_file_path, encoding='utf-8')
 ```
 
